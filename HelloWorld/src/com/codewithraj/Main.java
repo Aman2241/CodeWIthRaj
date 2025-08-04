@@ -44,6 +44,8 @@ public class Main {
         //format
 
         System.out.println(NumberFormat.getInstance().format(13782687));
+        System.out.println(NumberFormat.getCurrencyInstance().format(13782687));
+
 
     }
 }
