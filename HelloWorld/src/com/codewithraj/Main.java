@@ -9,5 +9,8 @@ public class Main {
         DataTypes data = new DataTypes();
         data.informationPrint();
 
+        //StringExample
+        StringExamples stringExamples = new StringExamples();
+        stringExamples.printMessage();
     }
 }
