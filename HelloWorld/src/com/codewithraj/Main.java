@@ -1,6 +1,8 @@
 package com.codewithraj;
 
 
+import javax.swing.text.NumberFormatter;
+import java.text.NumberFormat;
 import java.util.Arrays;
 
 public class Main {
@@ -37,6 +39,11 @@ public class Main {
         System.out.println(Math.max(2,3));
         System.out.println(Math.min(2,3));
         System.out.println((int)(Math.random()*100));
+
+
+        //format
+
+        System.out.println(NumberFormat.getInstance().format(13782687));
 
     }
 }
