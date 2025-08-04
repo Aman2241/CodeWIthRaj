@@ -53,5 +53,22 @@ public class Main {
         System.out.println("Please enter your age");
         int age = input.nextInt();
         System.out.println("Your age is "+age);
+
+        final byte MONTH_IN_YEAR = 12;
+        final byte PERCENT=100;
+        //Mortgage calculator
+        System.out.println("Please enter principal amount");
+        double principalAmount = input.nextDouble();
+        System.out.println("Please enter rate of interest");
+        double yearlyInterest = input.nextDouble();
+        yearlyInterest= yearlyInterest/PERCENT/MONTH_IN_YEAR; //monthly interest rate
+
+        System.out.println("Please enter number of payments");
+        int yearlyPaymentCount = input.nextInt();
+        yearlyPaymentCount =yearlyPaymentCount*MONTH_IN_YEAR;
+
+        double mortgage=principalAmount*(yearlyInterest*Math.pow(1+yearlyInterest,yearlyPaymentCount))/(Math.pow(1+yearlyInterest,yearlyPaymentCount)-1);
+        String formattedMortgage=NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Your mortgage is "+formattedMortgage);
     }
 }
