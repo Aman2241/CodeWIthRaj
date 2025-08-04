@@ -30,5 +30,13 @@ public class Main {
         System.out.println(Arrays.deepToString(numbers)); // to print multi dimensional arrays
 
 
+        //Math class
+        double x = 1.2;
+        System.out.println(Math.ceil(x));
+        System.out.println(Math.floor(x));
+        System.out.println(Math.max(2,3));
+        System.out.println(Math.min(2,3));
+        System.out.println((int)(Math.random()*100));
+
     }
 }
