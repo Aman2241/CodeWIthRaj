@@ -8,4 +8,6 @@ public class ArrayExample {
         System.out.println(arr.length);
         System.out.println(Arrays.toString(arr));
     }
+
+
 }

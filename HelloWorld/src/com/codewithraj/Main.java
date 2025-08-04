@@ -1,6 +1,8 @@
 package com.codewithraj;
 
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -20,5 +22,13 @@ public class Main {
         //Arrays
         ArrayExample arrayExample = new ArrayExample();
         arrayExample.printArray();
+
+        //multidimensional arrays
+        int [][] numbers=new int[2][3];
+        numbers[0][0]=2;
+
+        System.out.println(Arrays.deepToString(numbers)); // to print multi dimensional arrays
+
+
     }
 }
