@@ -4,6 +4,7 @@ package com.codewithraj;
 import javax.swing.text.NumberFormatter;
 import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,5 +48,10 @@ public class Main {
         System.out.println(NumberFormat.getCurrencyInstance().format(13782687));
 
 
+        //reading input
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your age");
+        int age = input.nextInt();
+        System.out.println("Your age is "+age);
     }
 }
