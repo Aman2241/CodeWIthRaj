@@ -12,5 +12,9 @@ public class Main {
         //StringExample
         StringExamples stringExamples = new StringExamples();
         stringExamples.printMessage();
+
+        //escape sequence
+        System.out.println("Hello \"Raj\"");
+        System.out.println("Hello \n world");
     }
 }
