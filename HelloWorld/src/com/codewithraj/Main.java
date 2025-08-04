@@ -16,5 +16,9 @@ public class Main {
         //escape sequence
         System.out.println("Hello \"Raj\"");
         System.out.println("Hello \n world");
+
+        //Arrays
+        ArrayExample arrayExample = new ArrayExample();
+        arrayExample.printArray();
     }
 }
